@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res"/><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/build/generated/res/rs/release"/><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res"><file name="ic_launcher_round" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.xml" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xxxhdpi/ic_launcher.xml" qualifiers="xxxhdpi-v4" type="mipmap"/><file name="menu_course_detail" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/menu/menu_course_detail.xml" qualifiers="" type="menu"/><file name="bottom_nav_menu" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/menu/bottom_nav_menu.xml" qualifiers="" type="menu"/><file name="menu_course_search" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/menu/menu_course_search.xml" qualifiers="" type="menu"/><file name="ic_launcher_round" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-hdpi/ic_launcher_round.xml" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-hdpi/ic_launcher.xml" qualifiers="hdpi-v4" type="mipmap"/><file name="nav_graph" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/navigation/nav_graph.xml" qualifiers="" type="navigation"/><file name="ic_launcher_round" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher_round.xml" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xhdpi/ic_launcher.xml" qualifiers="xhdpi-v4" type="mipmap"/><file name="slide_in_left" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/slide_in_left.xml" qualifiers="" type="anim"/><file name="fade_out" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/fade_out.xml" qualifiers="" type="anim"/><file name="nav_default_exit_anim" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/nav_default_exit_anim.xml" qualifiers="" type="anim"/><file name="nav_default_enter_anim" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/nav_default_enter_anim.xml" qualifiers="" type="anim"/><file name="fade_in" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/fade_in.xml" qualifiers="" type="anim"/><file name="slide_out_left" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/slide_out_left.xml" qualifiers="" type="anim"/><file name="slide_out_right" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/slide_out_right.xml" qualifiers="" type="anim"/><file name="slide_in_right" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/anim/slide_in_right.xml" qualifiers="" type="anim"/><file name="item_achievement" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/item_achievement.xml" qualifiers="" type="layout"/><file name="item_requirement" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/item_requirement.xml" qualifiers="" type="layout"/><file name="fragment_content_viewer" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/fragment_content_viewer.xml" qualifiers="" type="layout"/><file name="item_learning_outcome" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/item_learning_outcome.xml" qualifiers="" type="layout"/><file name="activity_main" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="fragment_course_list" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/fragment_course_list.xml" qualifiers="" type="layout"/><file name="item_recent_course" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/item_recent_course.xml" qualifiers="" type="layout"/><file name="item_course" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/item_course.xml" qualifiers="" type="layout"/><file name="fragment_home" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/fragment_home.xml" qualifiers="" type="layout"/><file name="fragment_course_detail" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/layout/fragment_course_detail.xml" qualifiers="" type="layout"/><file name="backup_rules" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/xml/backup_rules.xml" qualifiers="" type="xml"/><file name="data_extraction_rules" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/xml/data_extraction_rules.xml" qualifiers="" type="xml"/><file name="file_paths" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/xml/file_paths.xml" qualifiers="" type="xml"/><file path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/values-night/themes.xml" qualifiers="night-v8"><style name="Base.Theme.CodeLearnAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_dark_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_dark_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_dark_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_dark_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_dark_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_dark_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_dark_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_dark_error</item>
+        <item name="colorOnError">@color/md_theme_dark_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_dark_background</item>
+        <item name="colorOnBackground">@color/md_theme_dark_onBackground</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_dark_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_dark_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_dark_outline</item>
+        
+        <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
+    </style><style name="ThemeOverlay.App.BottomNavigation" parent="">
+        <item name="colorSurface">@color/md_theme_dark_surfaceContainer</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
+    </style><style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_dark_surface</item>
+        <item name="titleTextColor">@color/md_theme_dark_onSurface</item>
+        <item name="android:elevation">4dp</item>
+    </style><style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+    </style><style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+    </style><style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/md_theme_dark_onSurface</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style><style name="TextAppearance.App.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/md_theme_dark_onSurfaceVariant</item>
+    </style><style name="Widget.App.CodeEditor" parent="">
+        <item name="android:background">@color/editor_bg_dark</item>
+        <item name="android:textColor">@color/editor_text_dark</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">16dp</item>
+    </style></file><file name="ic_launcher_round" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-mdpi/ic_launcher_round.xml" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-mdpi/ic_launcher.xml" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_courses" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_courses.xml" qualifiers="" type="drawable"/><file name="bg_card_ripple" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/bg_card_ripple.xml" qualifiers="" type="drawable"/><file name="ic_time" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_time.xml" qualifiers="" type="drawable"/><file name="ic_splash_screen" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_splash_screen.xml" qualifiers="" type="drawable"/><file name="ic_progress" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_progress.xml" qualifiers="" type="drawable"/><file name="ic_code" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_code.xml" qualifiers="" type="drawable"/><file name="bg_difficulty_badge" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/bg_difficulty_badge.xml" qualifiers="" type="drawable"/><file name="ic_profile" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_profile.xml" qualifiers="" type="drawable"/><file name="ic_info" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_info.xml" qualifiers="" type="drawable"/><file name="ic_people" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_people.xml" qualifiers="" type="drawable"/><file name="bg_code_inline" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/bg_code_inline.xml" qualifiers="" type="drawable"/><file name="bg_points_badge" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/bg_points_badge.xml" qualifiers="" type="drawable"/><file name="gradient_overlay" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/gradient_overlay.xml" qualifiers="" type="drawable"/><file name="ic_arrow_back" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_arrow_back.xml" qualifiers="" type="drawable"/><file name="bg_snackbar" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/bg_snackbar.xml" qualifiers="" type="drawable"/><file name="ic_favorite_border" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_favorite_border.xml" qualifiers="" type="drawable"/><file name="ic_check_circle" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_check_circle.xml" qualifiers="" type="drawable"/><file name="ic_home" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_home.xml" qualifiers="" type="drawable"/><file name="ic_favorite" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/drawable/ic_favorite.xml" qualifiers="" type="drawable"/><file name="ic_launcher_round" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.xml" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/mipmap-xxhdpi/ic_launcher.xml" qualifiers="xxhdpi-v4" type="mipmap"/><file path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/values/styles.xml" qualifiers=""><style name="Widget.App.Card.Elevated" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/md_theme_light_surface</item>
+    </style><style name="Widget.App.Card.Outlined" parent="Widget.Material3.CardView.Outlined">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">@color/md_theme_light_outline</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/md_theme_light_surfaceVariant</item>
+    </style><style name="Widget.App.Card.Clickable" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="cardBackgroundColor">@color/md_theme_light_surface</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style><style name="Widget.App.Button.Primary" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">sans-serif</item>
+    </style><style name="Widget.App.Button.Secondary" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingHorizontal">24dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="strokeColor">@color/md_theme_light_outline</item>
+        <item name="strokeWidth">1dp</item>
+    </style><style name="Widget.App.Button.TextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif</item>
+    </style><style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="android:padding">8dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style><style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif</item>
+    </style><style name="Widget.App.TextInputLayout.OutlinedBox" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxStrokeColor">@color/md_theme_light_primary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/md_theme_light_primary</item>
+    </style><style name="Widget.App.TextInputLayout.FilledBox" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxBackgroundColor">@color/md_theme_light_surfaceVariant</item>
+    </style><style name="Widget.App.Chip.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Caption</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipStrokeColor">@color/md_theme_light_outline</item>
+        <item name="chipBackgroundColor">@color/md_theme_light_surfaceVariant</item>
+    </style><style name="Widget.App.Chip.Assist" parent="Widget.Material3.Chip.Assist">
+        <item name="chipCornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Caption</item>
+        <item name="chipBackgroundColor">@color/md_theme_light_secondaryContainer</item>
+        <item name="android:textColor">@color/md_theme_light_onSecondaryContainer</item>
+    </style><style name="Widget.App.Chip.Entry" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Caption</item>
+        <item name="chipBackgroundColor">@color/md_theme_light_tertiaryContainer</item>
+        <item name="android:textColor">@color/md_theme_light_onTertiaryContainer</item>
+    </style><style name="Widget.App.LinearProgressIndicator" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackCornerRadius">4dp</item>
+        <item name="trackThickness">8dp</item>
+        <item name="indicatorColor">@color/md_theme_light_primary</item>
+        <item name="trackColor">@color/md_theme_light_surfaceContainer</item>
+    </style><style name="Widget.App.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorSize">40dp</item>
+        <item name="indicatorColor">@color/md_theme_light_primary</item>
+        <item name="trackColor">@color/md_theme_light_surfaceContainer</item>
+        <item name="trackThickness">4dp</item>
+    </style><style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigation</item>
+        <item name="android:background">@color/md_theme_light_surfaceContainer</item>
+        <item name="elevation">8dp</item>
+    </style><style name="Widget.App.Toolbar.Primary" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_light_primary</item>
+        <item name="titleTextColor">@color/md_theme_light_onPrimary</item>
+        <item name="subtitleTextColor">@color/md_theme_light_onPrimary</item>
+        <item name="android:elevation">4dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar.Title</item>
+    </style><style name="Widget.App.Toolbar.Surface" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_light_surface</item>
+        <item name="titleTextColor">@color/md_theme_light_onSurface</item>
+        <item name="subtitleTextColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:elevation">2dp</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar.Title</item>
+    </style><style name="Widget.App.ImageView.Circle" parent="">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Circle</item>
+    </style><style name="Widget.App.ImageView.Rounded" parent="">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style><style name="Widget.App.Divider" parent="">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/md_theme_light_outline</item>
+        <item name="android:layout_marginVertical">8dp</item>
+    </style><style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/md_theme_light_primary</item>
+        <item name="trackTint">@color/md_theme_light_surfaceContainerHigh</item>
+    </style><style name="Widget.App.SeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/md_theme_light_primary</item>
+        <item name="android:thumbTint">@color/md_theme_light_primary</item>
+    </style><style name="Widget.App.RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@color/md_theme_light_primary</item>
+    </style><style name="Widget.App.Container.Screen" parent="">
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/md_theme_light_background</item>
+    </style><style name="Widget.App.Container.Card" parent="">
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">@drawable/bg_card_ripple</item>
+    </style><style name="Widget.App.Container.Section" parent="">
+        <item name="android:layout_marginVertical">16dp</item>
+    </style><style name="Widget.App.ListItem.SingleLine" parent="">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style><style name="Widget.App.ListItem.TwoLine" parent="">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">12dp</item>
+        <item name="android:minHeight">72dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style><style name="Widget.App.ListItem.ThreeLine" parent="">
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">16dp</item>
+        <item name="android:minHeight">88dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style><style name="ShapeAppearance.App.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style><style name="ShapeAppearance.App.Small" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style><style name="ShapeAppearance.App.Medium" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style><style name="ShapeAppearance.App.Large" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style><style name="ShapeAppearance.App.ExtraLarge" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style><style name="TextAppearance.App.Toolbar.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?attr/titleTextColor</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Toolbar.Subtitle" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/subtitleTextColor</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Headline1" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style><style name="TextAppearance.App.Headline2" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style><style name="TextAppearance.App.Headline3" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style><style name="TextAppearance.App.Title.Large" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Title.Medium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Title.Small" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Body.Large" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.5</item>
+    </style><style name="TextAppearance.App.Body.Medium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style><style name="TextAppearance.App.Body.Small" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineSpacingMultiplier">1.3</item>
+    </style><style name="TextAppearance.App.Label.Large" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Label.Medium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Label.Small" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style><style name="TextAppearance.App.Code" parent="">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/md_theme_light_surfaceContainer</item>
+        <item name="android:padding">8dp</item>
+    </style><style name="TextAppearance.App.Code.Inline" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/md_theme_light_primary</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:background">@drawable/bg_code_inline</item>
+    </style><style name="Widget.App.Card.Course" parent="Widget.App.Card.Clickable">
+        <item name="cardElevation">6dp</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="android:layout_margin">12dp</item>
+    </style><style name="Widget.App.ListItem.Lesson" parent="Widget.App.ListItem.TwoLine">
+        <item name="android:minHeight">64dp</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">12dp</item>
+    </style><style name="Widget.App.Card.Achievement" parent="Widget.App.Card.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">3dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style><style name="Widget.App.Card.QuizOption" parent="Widget.App.Card.Outlined">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style><style name="Widget.App.Card.Progress" parent="Widget.App.Card.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="cardBackgroundColor">@color/md_theme_light_surfaceVariant</item>
+    </style><style name="Widget.App.SearchBar" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:paddingHorizontal">8dp</item>
+    </style><style name="Widget.App.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:elevation">0dp</item>
+    </style><style name="Widget.App.BottomSheet.Modal" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Large</item>
+        <item name="backgroundTint">@color/md_theme_light_surface</item>
+    </style><style name="Widget.App.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="dialogCornerRadius">16dp</item>
+    </style><style name="Widget.App.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="android:background">@drawable/bg_snackbar</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Medium</item>
+    </style><style name="Widget.App.Elevation.None" parent="">
+        <item name="android:elevation">0dp</item>
+    </style><style name="Widget.App.Elevation.Small" parent="">
+        <item name="android:elevation">2dp</item>
+    </style><style name="Widget.App.Elevation.Medium" parent="">
+        <item name="android:elevation">4dp</item>
+    </style><style name="Widget.App.Elevation.Large" parent="">
+        <item name="android:elevation">8dp</item>
+    </style></file><file path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/values/colors.xml" qualifiers=""><color name="md_theme_light_primary">#006493</color><color name="md_theme_light_onPrimary">#FFFFFF</color><color name="md_theme_light_primaryContainer">#CAE6FF</color><color name="md_theme_light_onPrimaryContainer">#001E30</color><color name="md_theme_light_secondary">#50607A</color><color name="md_theme_light_onSecondary">#FFFFFF</color><color name="md_theme_light_secondaryContainer">#D8E4F8</color><color name="md_theme_light_onSecondaryContainer">#0C1D35</color><color name="md_theme_light_tertiary">#65587B</color><color name="md_theme_light_onTertiary">#FFFFFF</color><color name="md_theme_light_tertiaryContainer">#ECDCFF</color><color name="md_theme_light_onTertiaryContainer">#201634</color><color name="md_theme_light_error">#BA1A1A</color><color name="md_theme_light_onError">#FFFFFF</color><color name="md_theme_light_errorContainer">#FFDAD6</color><color name="md_theme_light_onErrorContainer">#410002</color><color name="md_theme_light_background">#FDFBFF</color><color name="md_theme_light_onBackground">#1A1B1E</color><color name="md_theme_light_surface">#FDFBFF</color><color name="md_theme_light_onSurface">#1A1B1E</color><color name="md_theme_light_surfaceVariant">#DDE3EA</color><color name="md_theme_light_onSurfaceVariant">#41474D</color><color name="md_theme_light_outline">#71787E</color><color name="md_theme_light_outlineVariant">#C1C7CE</color><color name="md_theme_light_scrim">#000000</color><color name="md_theme_light_inverseSurface">#2F3033</color><color name="md_theme_light_inverseOnSurface">#F1F0F4</color><color name="md_theme_light_inversePrimary">#90CDFF</color><color name="md_theme_light_surfaceDim">#DDD8DD</color><color name="md_theme_light_surfaceBright">#FDFBFF</color><color name="md_theme_light_surfaceContainerLowest">#FFFFFF</color><color name="md_theme_light_surfaceContainerLow">#F7F2FA</color><color name="md_theme_light_surfaceContainer">#F1ECF4</color><color name="md_theme_light_surfaceContainerHigh">#ECE6EE</color><color name="md_theme_light_surfaceContainerHighest">#E6E0E8</color><color name="md_theme_dark_primary">#90CDFF</color><color name="md_theme_dark_onPrimary">#003450</color><color name="md_theme_dark_primaryContainer">#004B71</color><color name="md_theme_dark_onPrimaryContainer">#CAE6FF</color><color name="md_theme_dark_secondary">#B1C8E8</color><color name="md_theme_dark_onSecondary">#21324A</color><color name="md_theme_dark_secondaryContainer">#384961</color><color name="md_theme_dark_onSecondaryContainer">#D8E4F8</color><color name="md_theme_dark_tertiary">#D0BFEB</color><color name="md_theme_dark_onTertiary">#362B4A</color><color name="md_theme_dark_tertiaryContainer">#4D4162</color><color name="md_theme_dark_onTertiaryContainer">#ECDCFF</color><color name="md_theme_dark_error">#FFB4AB</color><color name="md_theme_dark_onError">#690005</color><color name="md_theme_dark_errorContainer">#93000A</color><color name="md_theme_dark_onErrorContainer">#FFDAD6</color><color name="md_theme_dark_background">#1A1B1E</color><color name="md_theme_dark_onBackground">#E3E2E6</color><color name="md_theme_dark_surface">#1A1B1E</color><color name="md_theme_dark_onSurface">#E3E2E6</color><color name="md_theme_dark_surfaceVariant">#41474D</color><color name="md_theme_dark_onSurfaceVariant">#C1C7CE</color><color name="md_theme_dark_outline">#8B9298</color><color name="md_theme_dark_outlineVariant">#41474D</color><color name="md_theme_dark_scrim">#000000</color><color name="md_theme_dark_inverseSurface">#E3E2E6</color><color name="md_theme_dark_inverseOnSurface">#2F3033</color><color name="md_theme_dark_inversePrimary">#006493</color><color name="md_theme_dark_surfaceDim">#1A1B1E</color><color name="md_theme_dark_surfaceBright">#404348</color><color name="md_theme_dark_surfaceContainerLowest">#111114</color><color name="md_theme_dark_surfaceContainerLow">#1A1B1E</color><color name="md_theme_dark_surfaceContainer">#1E1F23</color><color name="md_theme_dark_surfaceContainerHigh">#28292D</color><color name="md_theme_dark_surfaceContainerHighest">#33343A</color><color name="white">#FFFFFF</color><color name="black">#000000</color><color name="gray_50">#FAFAFA</color><color name="gray_100">#F5F5F5</color><color name="gray_200">#EEEEEE</color><color name="gray_300">#E0E0E0</color><color name="gray_400">#BDBDBD</color><color name="gray_500">#9E9E9E</color><color name="gray_600">#757575</color><color name="gray_700">#616161</color><color name="gray_800">#424242</color><color name="gray_900">#212121</color><color name="success">#4CAF50</color><color name="warning">#FF9800</color><color name="error_primary">#F44336</color><color name="info">#2196F3</color><color name="progress_background">#E0E0E0</color><color name="progress_complete">#4CAF50</color><color name="progress_in_progress">#2196F3</color><color name="editor_bg">#FFFFFF</color><color name="editor_bg_dark">#1E1E1E</color><color name="editor_text">#212121</color><color name="editor_text_dark">#FFFFFF</color><color name="editor_keyword">#0000FF</color><color name="editor_keyword_dark">#569CD6</color><color name="editor_string">#008000</color><color name="editor_string_dark">#CE9178</color><color name="editor_comment">#008000</color><color name="editor_comment_dark">#6A9955</color><color name="html_color">#E34C26</color><color name="css_color">#1572B6</color><color name="javascript_color">#F7DF1E</color><color name="difficulty_beginner">#4CAF50</color><color name="difficulty_intermediate">#FF9800</color><color name="difficulty_advanced">#F44336</color></file><file path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/values/themes.xml" qualifiers=""><style name="Base.Theme.CodeLearnAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        
+        <item name="colorSurfaceInverse">@color/md_theme_light_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/md_theme_light_inversePrimary</item>
+    </style><style name="Theme.CodeLearnAndroid" parent="Base.Theme.CodeLearnAndroid"/><style name="Theme.CodeLearnAndroid.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style><style name="BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigation</item>
+    </style><style name="ThemeOverlay.App.BottomNavigation" parent="">
+        <item name="colorSurface">@color/md_theme_light_surfaceContainer</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+    </style><style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/md_theme_light_surface</item>
+        <item name="titleTextColor">@color/md_theme_light_onSurface</item>
+        <item name="android:elevation">4dp</item>
+    </style><style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style><style name="Widget.App.Button" parent="Widget.Material3.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+    </style><style name="Widget.App.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+    </style><style name="Widget.App.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">8dp</item>
+    </style><style name="TextAppearance.App.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+    </style><style name="TextAppearance.App.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+    </style><style name="TextAppearance.App.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/md_theme_light_onSurface</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style><style name="TextAppearance.App.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/md_theme_light_onSurfaceVariant</item>
+    </style><style name="Widget.App.CodeEditor" parent="">
+        <item name="android:background">@color/editor_bg</item>
+        <item name="android:textColor">@color/editor_text</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">16dp</item>
+    </style><style name="Widget.App.ProgressBar" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackCornerRadius">4dp</item>
+        <item name="trackThickness">8dp</item>
+    </style><style name="Widget.App.Chip" parent="Widget.Material3.Chip.Filter">
+        <item name="chipCornerRadius">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Caption</item>
+    </style><style name="Widget.App.FloatingActionButton" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style><style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style><style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style><style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+    </style><style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style><style name="Theme.App.Starting" parent="Theme.CodeLearnAndroid.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splash_screen</item>
+    </style></file><file path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">Belajar Coding Offline</string><string name="nav_home">Beranda</string><string name="nav_courses">Kursus</string><string name="welcome_message">Selamat datang di Belajar Coding Offline!</string><string name="start_learning">Mulai Belajar</string><string name="continue_learning">Lanjutkan Belajar</string><string name="recent_courses">Kursus Terbaru</string><string name="achievements">Pencapaian</string><string name="html_basics">Dasar-dasar HTML</string><string name="css_fundamentals">Fundamental CSS</string><string name="javascript_intro">Pengenalan JavaScript</string><string name="beginner">Pemula</string><string name="intermediate">Menengah</string><string name="advanced">Lanjutan</string><string name="difficulty">Kesulitan</string><string name="estimated_time">Perkiraan Waktu</string><string name="enroll_now">Mulai Kursus</string><string name="continue_course">Lanjutkan</string><string name="learning_content">Materi Pembelajaran</string><string name="lesson">Pelajaran</string><string name="lessons">Pelajaran</string><string name="lesson_completed">Pelajaran Selesai</string><string name="next_lesson">Pelajaran Berikutnya</string><string name="previous_lesson">Pelajaran Sebelumnya</string><string name="mark_complete">Tandai Selesai</string><string name="refresh">Refresh</string><string name="ok">OK</string><string name="cancel">Batal</string><string name="yes">Ya</string><string name="no">Tidak</string><string name="error">Error</string><string name="success">Berhasil</string><string name="loading">Memuat...</string><string name="retry">Coba Lagi</string><string name="search">Cari</string><string name="filter">Filter</string><string name="sort">Urutkan</string><string name="settings">Pengaturan</string><string name="help">Bantuan</string><string name="about">Tentang</string><string name="all">Semua</string><string name="no_internet_needed">Tidak perlu koneksi internet</string><string name="offline_learning">Pembelajaran Offline</string><string name="free_forever">Gratis Selamanya</string><string name="loading_courses">Memuat kursus...</string><string name="no_courses_found">Tidak ada kursus ditemukan</string><string name="try_different_filter">Coba ubah filter atau refresh halaman</string><string name="course_detail">Detail Kursus</string><string name="content_not_available">Konten tidak tersedia</string><string name="content_load_failed">Gagal memuat konten</string><string name="offline_content_not_available">Konten offline tidak tersedia untuk kursus ini</string><string name="file_not_found">File konten tidak ditemukan</string><string name="error_loading_content">Error memuat konten</string><string name="failed_to_load_courses">Gagal memuat kursus. Silakan coba lagi.</string><string name="course_image">Gambar Kursus</string><string name="learning_path">Jalur Pembelajaran</string><string name="web_structure">Struktur dasar web</string><string name="web_styling">Styling dan layout web</string><string name="web_interactivity">Interaktivitas web</string><string name="why_learn_offline">Mengapa Belajar Offline?</string><string name="quick_tips">Tips Cepat</string><string name="quick_tips_text">Mulai dengan HTML untuk memahami struktur web, lanjut ke CSS untuk styling, dan terakhir JavaScript untuk membuat website interaktif.</string><string name="html">HTML</string><string name="css">CSS</string><string name="javascript">JavaScript</string><string name="previous">Sebelumnya</string><string name="next">Selanjutnya</string><string name="cd_menu">Menu</string><string name="cd_back">Kembali</string><string name="cd_close">Tutup</string><string name="cd_search">Cari</string><string name="cd_bookmark">Bookmark</string><string name="cd_share">Bagikan</string><string name="cd_info">Info</string><string name="instructor_image">Gambar Instruktur</string><string name="learning_outcome">Hasil Pembelajaran</string><string name="requirement">Persyaratan</string></file></source><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/build/generated/res/rs/release"/><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>

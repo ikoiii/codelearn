@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        .code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .example {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8fff9;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .demo-box {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .demo-text {
+            color: #dc3545;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengenalan CSS</h1>
+        <p><strong>CSS</strong> (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur gaya dan tampilan halaman HTML.</p>
+
+        <h2>Apa itu CSS?</h2>
+        <ul>
+            <li>CSS digunakan untuk mengatur tampilan dan layout halaman web</li>
+            <li>CSS memisahkan konten (HTML) dari presentasi (gaya)</li>
+            <li>CSS membuat website lebih konsisten dan mudah dikelola</li>
+            <li>CSS bekerja bersama dengan HTML dan JavaScript</li>
+        </ul>
+
+        <h2>Cara Menggunakan CSS:</h2>
+
+        <h3>1. Inline CSS</h3>
+        <div class="code">
+&lt;p style="color: red; font-size: 18px;"&gt;Teks merah dengan ukuran 18px&lt;/p&gt;
+        </div>
+
+        <h3>2. Internal CSS</h3>
+        <div class="code">
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+        </div>
+
+        <h3>3. External CSS (Recommended)</h3>
+        <div class="code">
+&lt;!-- Di HTML --&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+
+&lt;!-- Di file style.css --&gt;
+p {
+    color: green;
+    font-size: 14px;
+}
+        </div>
+
+        <h2>Struktur Sintaks CSS:</h2>
+        <div class="code">
+selector {
+    property: value;
+    property: value;
+}
+        </div>
+        <ul>
+            <li><strong>Selector</strong> - Element HTML yang ingin diatur gayanya</li>
+            <li><strong>Property</strong> - Atribut gaya yang ingin diubah</li>
+            <li><strong>Value</strong> - Nilai dari properti tersebut</li>
+        </ul>
+
+        <h2>Selector CSS:</h2>
+
+        <h3>Element Selector</h3>
+        <div class="code">
+p {
+    color: black;
+}
+h1 {
+    color: blue;
+}
+        </div>
+
+        <h3>Class Selector</h3>
+        <div class="code">
+.nama-class {
+    color: red;
+    font-size: 20px;
+}
+
+&lt;!-- Penggunaan di HTML --&gt;
+&lt;p class="nama-class"&gt;Paragraf dengan gaya khusus&lt;/p&gt;
+        </div>
+
+        <h3>ID Selector</h3>
+        <div class="code">
+#header {
+    background-color: #333;
+    color: white;
+}
+
+&lt;!-- Penggunaan di HTML --&gt;
+&lt;div id="header"&gt;Header Website&lt;/div&gt;
+        </div>
+
+        <h3>Universal Selector</h3>
+        <div class="code">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        </div>
+
+        <h3>Group Selector</h3>
+        <div class="code">
+h1, h2, h3 {
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+        </div>
+
+        <h2>Property CSS yang Umum:</h2>
+
+        <h3>Text Styling</h3>
+        <div class="code">
+.text-style {
+    color: #333;                /* Warna teks */
+    font-size: 16px;           /* Ukuran font */
+    font-family: Arial;        /* Jenis font */
+    font-weight: bold;         /* Ketebalan font */
+    text-align: center;        /* Align teks */
+    text-decoration: underline; /* Dekorasi teks */
+    line-height: 1.5;          /* Jarak antar baris */
+    letter-spacing: 1px;       /* Jarak antar huruf */
+}
+        </div>
+
+        <h3>Background</h3>
+        <div class="code">
+.bg-style {
+    background-color: #f0f0f0;      /* Warna background */
+    background-image: url('img.jpg'); /* Gambar background */
+    background-size: cover;         /* Ukuran background */
+    background-position: center;    /* Posisi background */
+    background-repeat: no-repeat;   /* Pengulangan background */
+}
+        </div>
+
+        <h3>Margin dan Padding</h3>
+        <div class="code">
+.spacing {
+    margin: 10px;           /* Semua sisi: 10px */
+    margin: 10px 20px;      /* Atas/bawah: 10px, kiri/kanan: 20px */
+    margin: 10px 20px 30px; /* Atas: 10px, kiri/kanan: 20px, bawah: 30px */
+    margin: 10px 20px 30px 40px; /* Atas, kanan, bawah, kiri */
+
+    padding: 15px;          /* Padding di dalam element */
+}
+        </div>
+
+        <h3>Border</h3>
+        <div class="code">
+.border-style {
+    border: 2px solid #333;      /* Style lengkap */
+    border-width: 2px;           /* Tebal border */
+    border-style: solid;         /* Style border */
+    border-color: #333;          /* Warna border */
+    border-radius: 5px;          /* Sudut melengkung */
+}
+        </div>
+
+        <h3>Width dan Height</h3>
+        <div class="code">
+.size {
+    width: 300px;                /* Lebar */
+    height: 200px;               /* Tinggi */
+    max-width: 100%;             /* Lebar maksimal */
+    min-height: 100px;           /* Tinggi minimal */
+}
+        </div>
+
+        <h3>Display</h3>
+        <div class="code">
+.display-property {
+    display: block;      /* Element blok (penuh lebar) */
+    display: inline;     /* Element inline (sejajar) */
+    display: inline-block; /* Kombinasi inline + block */
+    display: none;        /* Sembunyikan element */
+}
+        </div>
+
+        <h3>Position</h3>
+        <div class="code">
+.position-property {
+    position: static;      /* Default */
+    position: relative;    /* Relatif terhadap posisi normal */
+    position: absolute;    /* Relatif terhadap parent */
+    position: fixed;       /* Fix di viewport */
+    position: sticky;      /* Sticky saat scroll */
+
+    top: 10px;
+    left: 20px;
+    right: 30px;
+    bottom: 40px;
+}
+        </div>
+
+        <h2>Contoh Praktis:</h2>
+        <div class="example">
+            <div class="demo-box">
+                Ini adalah contoh box dengan styling CSS
+            </div>
+
+            <p class="demo-text">Teks dengan gaya khusus</p>
+
+            <div class="code">
+/* CSS Example */
+.demo-box {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.demo-text {
+    color: #dc3545;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Best Practice:</strong> Gunakan External CSS file untuk memisahkan struktur (HTML) dari presentasi (CSS). Ini membuat kode lebih terorganisir dan mudah dikelola.
+        </div>
+
+        <h2>Latihan:</h2>
+        <div class="example">
+            <p>Coba buat file CSS sederhana dengan class berikut:</p>
+            <div class="code">
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

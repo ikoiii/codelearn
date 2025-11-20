@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form dan Input HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        .code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .example {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8fff9;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .demo-form {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        .demo-form label {
+            display: block;
+            margin: 10px 0 5px 0;
+            font-weight: bold;
+        }
+        .demo-form input, .demo-form select, .demo-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Form dan Input HTML</h1>
+        <p>Form HTML digunakan untuk mengumpulkan input dari pengguna.</p>
+
+        <h2>Element Dasar Form</h2>
+        <div class="code">
+&lt;form action="/submit" method="POST"&gt;
+    &lt;!-- Input fields here --&gt;
+&lt;/form&gt;
+        </div>
+        <p>Atribut penting:</p>
+        <ul>
+            <li><strong>action</strong> - URL tempat data akan dikirim</li>
+            <li><strong>method</strong> - HTTP method (GET atau POST)</li>
+        </ul>
+
+        <h2>Jenis-jenis Input:</h2>
+
+        <h3>1. Text Input</h3>
+        <div class="code">
+&lt;label for="nama"&gt;Nama:&lt;/label&gt;
+&lt;input type="text" id="nama" name="nama" placeholder="Masukkan nama"&gt;
+        </div>
+
+        <h3>2. Password Input</h3>
+        <div class="code">
+&lt;label for="password"&gt;Password:&lt;/label&gt;
+&lt;input type="password" id="password" name="password"&gt;
+        </div>
+
+        <h3>3. Email Input</h3>
+        <div class="code">
+&lt;label for="email"&gt;Email:&lt;/label&gt;
+&lt;input type="email" id="email" name="email" required&gt;
+        </div>
+
+        <h3>4. Number Input</h3>
+        <div class="code">
+&lt;label for="umur"&gt;Umur:&lt;/label&gt;
+&lt;input type="number" id="umur" name="umur" min="1" max="120"&gt;
+        </div>
+
+        <h3>5. Radio Buttons</h3>
+        <div class="code">
+&lt;label&gt;Jenis Kelamin:&lt;/label&gt;
+&lt;input type="radio" id="pria" name="gender" value="pria"&gt;
+&lt;label for="pria"&gt;Pria&lt;/label&gt;
+
+&lt;input type="radio" id="wanita" name="gender" value="wanita"&gt;
+&lt;label for="wanita"&gt;Wanita&lt;/label&gt;
+        </div>
+
+        <h3>6. Checkboxes</h3>
+        <div class="code">
+&lt;input type="checkbox" id="setuju" name="setuju"&gt;
+&lt;label for="setuju"&gt;Saya setuju dengan syarat dan ketentuan&lt;/label&gt;
+        </div>
+
+        <h3>7. Dropdown/Select</h3>
+        <div class="code">
+&lt;label for="kota"&gt;Kota:&lt;/label&gt;
+&lt;select id="kota" name="kota"&gt;
+    &lt;option value=""&gt;-- Pilih Kota --&lt;/option&gt;
+    &lt;option value="jakarta"&gt;Jakarta&lt;/option&gt;
+    &lt;option value="surabaya"&gt;Surabaya&lt;/option&gt;
+    &lt;option value="bandung"&gt;Bandung&lt;/option&gt;
+&lt;/select&gt;
+        </div>
+
+        <h3>8. Textarea</h3>
+        <div class="code">
+&lt;label for="pesan"&gt;Pesan:&lt;/label&gt;
+&lt;textarea id="pesan" name="pesan" rows="4" cols="50"&gt;&lt;/textarea&gt;
+        </div>
+
+        <h3>9. File Input</h3>
+        <div class="code">
+&lt;label for="file"&gt;Upload File:&lt;/label&gt;
+&lt;input type="file" id="file" name="file" accept=".jpg,.png,.pdf"&gt;
+        </div>
+
+        <h3>10. Buttons</h3>
+        <div class="code">
+&lt;input type="submit" value="Kirim"&gt;
+&lt;input type="reset" value="Reset"&gt;
+&lt;input type="button" value="Klik Saya"&gt;
+&lt;button type="submit"&gt;Kirim Form&lt;/button&gt;
+        </div>
+
+        <h2>Atribut Input Penting:</h2>
+        <ul>
+            <li><strong>id</strong> - Pengenal unik untuk element</li>
+            <li><strong>name</strong> - Nama untuk data submission</li>
+            <li><strong>value</strong> - Nilai default</li>
+            <li><strong>placeholder</strong> - Teks petunjuk</li>
+            <li><strong>required</strong> - Field wajib diisi</li>
+            <li><strong>readonly</strong> - Field hanya bisa dibaca</li>
+            <li><strong>disabled</strong> - Field dinonaktifkan</li>
+            <li><strong>min/max</strong> - Nilai minimum/maximum</li>
+            <li><strong>maxlength</strong> - Maksimum karakter</li>
+        </ul>
+
+        <h2>Contoh Form Lengkap:</h2>
+        <div class="example">
+            <div class="demo-form">
+                <label for="demo-nama">Nama Lengkap:</label>
+                <input type="text" id="demo-nama" name="nama" placeholder="John Doe">
+
+                <label for="demo-email">Email:</label>
+                <input type="email" id="demo-email" name="email" placeholder="john@example.com">
+
+                <label for="demo-umur">Umur:</label>
+                <input type="number" id="demo-umur" name="umur" min="1" max="120">
+
+                <label>Jenis Kelamin:</label>
+                <div>
+                    <input type="radio" id="demo-pria" name="gender" value="pria">
+                    <label for="demo-pria">Pria</label>
+                    <input type="radio" id="demo-wanita" name="gender" value="wanita">
+                    <label for="demo-wanita">Wanita</label>
+                </div>
+
+                <label for="demo-kota">Kota:</label>
+                <select id="demo-kota" name="kota">
+                    <option value="">-- Pilih Kota --</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="bandung">Bandung</option>
+                </select>
+
+                <label for="demo-pesan">Pesan:</label>
+                <textarea id="demo-pesan" name="pesan" rows="3" placeholder="Tulis pesan Anda..."></textarea>
+
+                <div style="margin-top: 15px;">
+                    <button type="submit" style="background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px;">Kirim Form</button>
+                </div>
+            </div>
+
+            <div class="code">
+&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="nama"&gt;Nama Lengkap:&lt;/label&gt;
+    &lt;input type="text" id="nama" name="nama" placeholder="John Doe" required&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" placeholder="john@example.com" required&gt;
+
+    &lt;label for="umur"&gt;Umur:&lt;/label&gt;
+    &lt;input type="number" id="umur" name="umur" min="1" max="120"&gt;
+
+    &lt;label&gt;Jenis Kelamin:&lt;/label&gt;
+    &lt;input type="radio" id="pria" name="gender" value="pria"&gt;
+    &lt;label for="pria"&gt;Pria&lt;/label&gt;
+    &lt;input type="radio" id="wanita" name="gender" value="wanita"&gt;
+    &lt;label for="wanita"&gt;Wanita&lt;/label&gt;
+
+    &lt;label for="kota"&gt;Kota:&lt;/label&gt;
+    &lt;select id="kota" name="kota"&gt;
+        &lt;option value=""&gt;-- Pilih Kota --&lt;/option&gt;
+        &lt;option value="jakarta"&gt;Jakarta&lt;/option&gt;
+        &lt;option value="surabaya"&gt;Surabaya&lt;/option&gt;
+        &lt;option value="bandung"&gt;Bandung&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for="pesan"&gt;Pesan:&lt;/label&gt;
+    &lt;textarea id="pesan" name="pesan" rows="3" placeholder="Tulis pesan Anda..."&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Kirim Form&lt;/button&gt;
+&lt;/form&gt;
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Tips:</strong> Selalu gunakan tag &lt;label&gt; dengan atribut for yang sesuai dengan id input untuk aksesibilitas yang lebih baik.
+        </div>
+    </div>
+</body>
+</html>

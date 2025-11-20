@@ -1,0 +1,4 @@
+#Thu Nov 20 14:23:35 WIB 2025
+base.0=/home/ikoi/Documents/project/pkm/CodeLearnAndroid/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

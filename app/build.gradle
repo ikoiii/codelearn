@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.codelearn.android'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.codelearn.android"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libjsc.so'
+    }
+
+    configurations.all {
+        resolutionStrategy {
+            force 'org.jetbrains.kotlin:kotlin-stdlib:1.8.20'
+            force 'org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20'
+        }
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+    }
+}
+
+dependencies {
+    // Android Architecture Components
+    implementation "androidx.lifecycle:lifecycle-viewmodel:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata:2.5.1"
+    implementation "androidx.navigation:navigation-fragment:2.5.3"
+    implementation "androidx.navigation:navigation-ui:2.5.3"
+
+    // UI/UX Libraries
+    implementation "com.google.android.material:material:1.6.1"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation "com.github.bumptech.glide:glide:4.12.0"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.12.0"
+
+    // Code Editor & Syntax Highlighting (Commented out for now)
+    // implementation "io.github.rosemoe.sora:editor:0.21.0"
+    // implementation "io.github.rosemoe.sora:language-textmate:0.21.0"
+    // implementation "io.github.rosemoe.sora:language-java:0.21.0"
+
+    // Web View for Live Preview (commented for compatibility)
+    // implementation "androidx.webkit:webkit:1.8.0"
+
+    // Database (Commented out for now)
+    // implementation "androidx.room:room-runtime:2.6.1"
+    // implementation "androidx.room:room-ktx:2.6.1"
+    // annotationProcessor "androidx.room:room-compiler:2.6.1"
+
+    // Tidak ada dependency network - app sepenuhnya offline
+
+    // Animation Libraries (Commented out for now)
+    // implementation "com.airbnb.android:lottie:6.1.0"
+
+    // Core Android Libraries
+    implementation "androidx.appcompat:appcompat:1.5.0"
+    implementation "androidx.core:core:1.7.0"
+    implementation "androidx.activity:activity:1.5.0"
+    implementation "androidx.fragment:fragment:1.5.0"
+
+    // Additional UI Components
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation "androidx.preference:preference:1.1.1"
+    // implementation "com.google.android:flexbox:3.0.0"
+
+    // Testing Libraries
+    testImplementation "junit:junit:4.13.2"
+    testImplementation "androidx.room:room-testing:2.6.1"
+    testImplementation "androidx.arch.core:core-testing:2.2.0"
+    testImplementation "org.mockito:mockito-core:5.7.0"
+
+    // Android Testing Libraries
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
+    androidTestImplementation "androidx.navigation:navigation-testing:2.7.5"
+    androidTestImplementation "androidx.test:core:1.5.0"
+    androidTestImplementation "androidx.test:runner:1.5.2"
+    androidTestImplementation "androidx.test:rules:1.5.0"
+
+    // Debug Dependencies
+    debugImplementation "androidx.fragment:fragment-testing:1.6.2"
+    debugImplementation "androidx.test:core:1.5.0"
+}

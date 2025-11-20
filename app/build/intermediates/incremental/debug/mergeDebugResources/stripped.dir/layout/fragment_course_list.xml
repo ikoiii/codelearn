@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_theme_light_surface"
+    android:fillViewport="true"
+    tools:context=".ui.courses.CourseListFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Welcome Header -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/md_theme_light_primaryContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="👋 Selamat Datang!"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_theme_light_onPrimaryContainer"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih materi pembelajaran yang ingin kamu pelajari. Semua materi tersedia secara offline."
+                    android:textSize="16sp"
+                    android:textColor="@color/md_theme_light_onPrimaryContainer"
+                    android:alpha="0.87" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Quick Filter Chips -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter:"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_onSurface"
+                android:layout_marginEnd="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buttonFilterAll"
+                        style="@style/Widget.App.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="Semua"
+                        android:textSize="12sp"
+                        android:checked="true"
+                        app:chipBackgroundColor="@color/md_theme_light_secondaryContainer"
+                        android:textColor="@color/md_theme_light_onSecondaryContainer" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buttonFilterHtml"
+                        style="@style/Widget.App.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="HTML"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buttonFilterCss"
+                        style="@style/Widget.App.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="CSS"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/buttonFilterJavascript"
+                        style="@style/Widget.App.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JavaScript"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <!-- Loading Progress -->
+        <LinearLayout
+            android:id="@+id/layoutLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp">
+
+            <ProgressBar
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="16dp"
+                android:indeterminateTint="@color/md_theme_light_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Memuat materi pembelajaran..."
+                android:textSize="16sp"
+                android:textColor="@color/md_theme_light_onSurfaceVariant" />
+
+        </LinearLayout>
+
+        <!-- Courses List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:clipToPadding="false"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            tools:listitem="@layout/item_course" />
+
+        <!-- No Results Message -->
+        <LinearLayout
+            android:id="@+id/layoutNoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/ic_courses"
+                android:layout_marginBottom="16dp"
+                app:tint="@color/md_theme_light_onSurfaceVariant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak ada materi ditemukan"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/md_theme_light_onSurface"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coba ubah filter atau refresh halaman"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_light_onSurfaceVariant"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

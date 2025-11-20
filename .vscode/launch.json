@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Android App",
+            "type": "java",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 5005,
+            "projectName": "app",
+            "preLaunchTask": "gradle: installDebug"
+        },
+        {
+            "name": "Launch App on Device",
+            "type": "shell",
+            "command": "adb",
+            "args": [
+                "shell",
+                "am",
+                "start",
+                "-n",
+                "com.codelearn.android/.MainActivity"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

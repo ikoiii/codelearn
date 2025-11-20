@@ -1,0 +1,96 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gradle: clean",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["clean"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gradle"
+        },
+        {
+            "label": "gradle: assembleDebug",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["assembleDebug"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gradle"
+        },
+        {
+            "label": "gradle: installDebug",
+            "type": "shell",
+            "command": "./gradlew",
+            "args": ["installDebug"],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gradle"
+        },
+        {
+            "label": "Build and Install APK",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "gradle: clean",
+                "gradle: assembleDebug",
+                "gradle: installDebug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "ADB: Check Devices",
+            "type": "shell",
+            "command": "adb",
+            "args": ["devices"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "ADB: Logcat",
+            "type": "shell",
+            "command": "adb",
+            "args": ["logcat", "-v", "color"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "isBackground": true
+        },
+        {
+            "label": "ADB: Clear Logcat",
+            "type": "shell",
+            "command": "adb",
+            "args": ["logcat", "-c"],
+            "group": "test"
+        },
+        {
+            "label": "ADB: Install APK",
+            "type": "shell",
+            "command": "adb",
+            "args": ["install", "-r", "app/build/outputs/apk/debug/app-debug.apk"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

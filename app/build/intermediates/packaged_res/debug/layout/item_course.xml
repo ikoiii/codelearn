@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/md_theme_light_outline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Course Category and Icon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <!-- Category Icon -->
+            <ImageView
+                android:id="@+id/imageCourseThumbnail"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/ic_courses"
+                android:backgroundTint="@color/md_theme_light_primary"
+                android:contentDescription="@string/course_image"
+                android:scaleType="centerInside" />
+
+            <!-- Category and Title -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Category Chip -->
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/textCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="HTML"
+                    android:textSize="12sp"
+                    style="@style/Widget.App.Chip.Filter"
+                    app:chipBackgroundColor="@color/md_theme_light_primaryContainer"
+                    android:textColor="@color/md_theme_light_onPrimaryContainer" />
+
+                <!-- Course Title -->
+                <TextView
+                    android:id="@+id/textCourseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pengenalan HTML"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_theme_light_onSurface"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="Pengenalan HTML" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Course Description -->
+        <TextView
+            android:id="@+id/textCourseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Pelajari dasar-dasar HTML mulai dari tag, atribut, hingga struktur dokumen HTML untuk pemula."
+            android:textSize="14sp"
+            android:textColor="@color/md_theme_light_onSurfaceVariant"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            tools:text="Pelajari dasar-dasar HTML mulai dari tag, atribut, hingga struktur dokumen HTML untuk pemula." />
+
+        <!-- Course Details Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Time Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_time"
+                    android:tint="@color/md_theme_light_onSurfaceVariant"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/textEstimatedTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 jam"
+                    android:textSize="12sp"
+                    android:textColor="@color/md_theme_light_onSurfaceVariant"
+                    tools:text="3 jam" />
+
+            </LinearLayout>
+
+            <!-- Start Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEnroll"
+                style="@style/Widget.App.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mulai Belajar"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_light_primary"
+                app:rippleColor="@color/md_theme_light_primary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/courseListFragment">
+
+    <!-- Main Course List - Start Destination -->
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="com.codelearn.android.ui.courses.CourseListFragment"
+        android:label="Materi Pembelajaran"
+        tools:layout="@layout/fragment_course_list">
+
+        <!-- Action to content viewer -->
+        <action
+            android:id="@+id/action_courseListFragment_to_contentViewerFragment"
+            app:destination="@id/contentViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <!-- Content Viewer Fragment untuk menampilkan HTML lokal -->
+    <fragment
+        android:id="@+id/contentViewerFragment"
+        android:name="com.codelearn.android.ui.content.ContentViewerFragment"
+        android:label="Pembelajaran"
+        tools:layout="@layout/fragment_content_viewer">
+
+        <argument
+            android:name="course"
+            app:argType="com.codelearn.android.model.Course" />
+
+        <argument
+            android:name="contentPath"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>

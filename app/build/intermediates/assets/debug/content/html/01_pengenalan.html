@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007bff;
+            margin-top: 30px;
+        }
+        .code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .example {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8fff9;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengenalan HTML</h1>
+        <p><strong>HTML</strong> (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web.</p>
+
+        <h2>Apa itu HTML?</h2>
+        <ul>
+            <li>HTML bukanlah bahasa pemrograman, melainkan bahasa markup</li>
+            <li>HTML menggunakan <strong>tag</strong> untuk mendeskripsikan struktur konten</li>
+            <li>HTML adalah dasar dari semua website di internet</li>
+            <li>HTML bekerja sama dengan CSS (untuk gaya) dan JavaScript (untuk interaktivitas)</li>
+        </ul>
+
+        <h2>Struktur Dasar HTML</h2>
+        <div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Judul Halaman&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Heading Utama&lt;/h1&gt;
+        &lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </div>
+
+        <h2>Penjelasan Tag Penting:</h2>
+        <ul>
+            <li><strong>&lt;!DOCTYPE html&gt;</strong> - Mendeklarasikan dokumen sebagai HTML5</li>
+            <li><strong>&lt;html&gt;</strong> - Elemen root dari halaman HTML</li>
+            <li><strong>&lt;head&gt;</strong> - Berisi metadata tentang dokumen</li>
+            <li><strong>&lt;title&gt;</strong> - Judul halaman yang muncul di browser tab</li>
+            <li><strong>&lt;body&gt;</strong> - Berisi konten yang terlihat di halaman</li>
+            <li><strong>&lt;h1&gt;</strong> - Heading level 1 (paling penting)</li>
+            <li><strong>&lt;p&gt;</strong> - Paragraf</li>
+        </ul>
+
+        <h2>Tag Umum lainnya:</h2>
+        <div class="code">
+&lt;!-- Heading --&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+
+&lt;!-- Text Formatting --&gt;
+&lt;b&gt;Tebal&lt;/b&gt;
+&lt;i&gt;Miring&lt;/i&gt;
+&lt;u&gt;Garis bawah&lt;/u&gt;
+&lt;strong&gt;Penting&lt;/strong&gt;
+&lt;em&gt;Penekanan&lt;/em&gt;
+
+&lt;!-- Links --&gt;
+&lt;a href="https://www.example.com"&gt;Link ke Example&lt;/a&gt;
+
+&lt;!-- Images --&gt;
+&lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;
+
+&lt;!-- Lists --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- Line Break --&gt;
+&lt;br&gt;
+
+&lt;!-- Horizontal Rule --&gt;
+&lt;hr&gt;
+        </div>
+
+        <div class="note">
+            <strong>Catatan:</strong> HTML tidak case-sensitive, tetapi lebih baik menggunakan lowercase untuk konsistensi dan HTML5.
+        </div>
+
+        <h2>Latihan Pertama:</h2>
+        <div class="example">
+            <p>Coba buat file HTML sederhana dengan struktur berikut:</p>
+            <div class="code">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Halaman Pertama Saya&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Selamat Datang!&lt;/h1&gt;
+        &lt;p&gt;Ini adalah halaman web pertama saya.&lt;/p&gt;
+        &lt;p&gt;Saya sedang belajar HTML!&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </div>
+        </div>
+    </div>
+</body>
+</html>

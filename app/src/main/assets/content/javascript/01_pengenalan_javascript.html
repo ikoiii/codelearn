@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #f7df1e;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #f7df1e;
+            margin-top: 30px;
+        }
+        .code {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .example {
+            border: 2px solid #28a745;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f8fff9;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .interactive {
+            background-color: #e7f3ff;
+            border: 1px solid #0066cc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        button {
+            background-color: #f7df1e;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e6c710;
+        }
+        #result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pengenalan JavaScript</h1>
+        <p><strong>JavaScript</strong> adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif dan dinamis.</p>
+
+        <h2>Apa itu JavaScript?</h2>
+        <ul>
+            <li>JavaScript adalah bahasa pemrograman client-side</li>
+            <li>JavaScript membuat website interaktif dan responsif</li>
+            <li>JavaScript dapat memanipulasi HTML dan CSS</li>
+            <li>JavaScript dapat menghandle event user (klik, hover, dll)</li>
+            <li>JavaScript dapat berkomunikasi dengan server (AJAX/Fetch)</li>
+        </ul>
+
+        <h2>Cara Menggunakan JavaScript:</h2>
+
+        <h3>1. Inline JavaScript</h3>
+        <div class="code">
+&lt;button onclick="alert('Hello World!')"&gt;Klik Saya&lt;/button&gt;
+        </div>
+
+        <h3>2. Internal JavaScript</h3>
+        <div class="code">
+&lt;script&gt;
+    function sayHello() {
+        alert('Hello World!');
+    }
+&lt;/script&gt;
+        </div>
+
+        <h3>3. External JavaScript (Recommended)</h3>
+        <div class="code">
+&lt;!-- Di HTML --&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;
+
+&lt;!-- Di file script.js --&gt;
+function sayHello() {
+    alert('Hello World!');
+}
+        </div>
+
+        <h2>Dasar-dasar JavaScript:</h2>
+
+        <h3>Variables (Variabel)</h3>
+        <div class="code">
+// ES6 - Modern JavaScript
+let name = "John Doe";        // Bisa diubah
+const age = 25;              // Tidak bisa diubah
+var isStudent = true;        // Cara lama (hindari)
+
+// Variable naming
+let userName = "alice";      // camelCase
+let user_name = "bob";       // snake_case
+let USER_NAME = "charlie";   // UPPER_CASE (konstanta)
+        </div>
+
+        <h3>Data Types</h3>
+        <div class="code">
+// Primitive types
+let text = "Hello World";    // String
+let number = 42;             // Number
+let decimal = 3.14;          // Number
+let isTrue = true;           // Boolean
+let isFalse = false;         // Boolean
+let nothing = null;          // Null
+let notDefined;              // Undefined
+
+// Reference types
+let person = {               // Object
+    name: "John",
+    age: 25
+};
+
+let colors = ["red", "green", "blue"]; // Array
+        </div>
+
+        <h3>Operators</h3>
+        <div class="code">
+// Arithmetic operators
+let x = 10;
+let y = 3;
+console.log(x + y);  // 13 (penjumlahan)
+console.log(x - y);  // 7  (pengurangan)
+console.log(x * y);  // 30 (perkalian)
+console.log(x / y);  // 3.33 (pembagian)
+console.log(x % y);  // 1  (modulus/sisa bagi)
+
+// Comparison operators
+console.log(x == y);   // false (sama nilai)
+console.log(x === y);  // false (sama nilai dan tipe)
+console.log(x != y);   // true (tidak sama nilai)
+console.log(x !== y);  // true (tidak sama nilai atau tipe)
+console.log(x > y);    // true (lebih besar)
+console.log(x < y);    // false (lebih kecil)
+
+// Logical operators
+let a = true;
+let b = false;
+console.log(a && b);   // false (AND)
+console.log(a || b);   // true  (OR)
+console.log(!a);       // false (NOT)
+        </div>
+
+        <h3>Control Structures</h3>
+
+        <h4>If-Else Statement</h4>
+        <div class="code">
+let age = 18;
+
+if (age >= 18) {
+    console.log("Anda dewasa");
+} else if (age >= 13) {
+    console.log("Anda remaja");
+} else {
+    console.log("Anda anak-anak");
+}
+
+// Ternary operator
+let message = age >= 18 ? "Dewasa" : "Anak-anak";
+        </div>
+
+        <h4>Switch Statement</h4>
+        <div class="code">
+let day = "Monday";
+
+switch (day) {
+    case "Monday":
+        console.log("Hari Senin");
+        break;
+    case "Tuesday":
+        console.log("Hari Selasa");
+        break;
+    default:
+        console.log("Hari lainnya");
+}
+        </div>
+
+        <h4>Loops (Perulangan)</h4>
+        <div class="code">
+// For loop
+for (let i = 0; i < 5; i++) {
+    console.log("Iterasi ke-" + i);
+}
+
+// While loop
+let count = 0;
+while (count < 5) {
+    console.log("Count: " + count);
+    count++;
+}
+
+// For...of loop (untuk array)
+let colors = ["red", "green", "blue"];
+for (let color of colors) {
+    console.log(color);
+}
+
+// For...in loop (untuk object)
+let person = {
+    name: "John",
+    age: 25
+};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+        </div>
+
+        <h3>Functions</h3>
+        <div class="code">
+// Function declaration
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+
+// Function expression
+const sayHello = function(name) {
+    return "Hi, " + name;
+};
+
+// Arrow function (ES6)
+const welcome = (name) => {
+    return "Welcome, " + name;
+};
+
+// Arrow function singkat
+const add = (a, b) => a + b;
+
+// Menggunakan function
+console.log(greet("Alice"));
+console.log(sayHello("Bob"));
+console.log(welcome("Charlie"));
+console.log(add(5, 3));
+        </div>
+
+        <h3>Arrays</h3>
+        <div class="code">
+// Membuat array
+let fruits = ["apple", "banana", "orange"];
+let numbers = [1, 2, 3, 4, 5];
+let mixed = ["text", 42, true, null];
+
+// Array methods
+fruits.push("grape");           // Tambah di akhir
+fruits.unshift("mango");        // Tambah di awal
+fruits.pop();                   // Hapus di akhir
+fruits.shift();                 // Hapus di awal
+
+// Mengakses elemen
+console.log(fruits[0]);         // "apple"
+console.log(fruits.length);     // Panjang array
+
+// Array methods modern
+let doubled = numbers.map(n => n * 2);           // [2, 4, 6, 8, 10]
+let evens = numbers.filter(n => n % 2 === 0);    // [2, 4]
+let sum = numbers.reduce((a, b) => a + b, 0);    // 15
+        </div>
+
+        <h3>Objects</h3>
+        <div class="code">
+// Membuat object
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 25,
+    isStudent: true,
+    hobbies: ["reading", "coding", "gaming"],
+
+    // Method dalam object
+    greet: function() {
+        return "Hello, I'm " + this.firstName;
+    }
+};
+
+// Mengakses properties
+console.log(person.firstName);        // "John"
+console.log(person["lastName"]);      // "Doe"
+console.log(person.greet());          // "Hello, I'm John"
+
+// Menambah property
+person.email = "john@example.com";
+
+// Menghapus property
+delete person.isStudent;
+        </div>
+
+        <h2>DOM Manipulation:</h2>
+        <div class="code">
+// Mengambil element
+const element = document.getElementById('myId');
+const elements = document.getElementsByClassName('myClass');
+const elements = document.querySelectorAll('.mySelector');
+
+// Mengubah konten
+element.textContent = "New text content";
+element.innerHTML = "<strong>Bold text</strong>";
+
+// Mengubah style
+element.style.color = "red";
+element.style.fontSize = "18px";
+
+// Menambah event listener
+element.addEventListener('click', function() {
+    alert('Element clicked!');
+});
+        </div>
+
+        <h2>Contoh Interaktif:</h2>
+        <div class="interactive">
+            <button onclick="showMessage()">Tampilkan Pesan</button>
+            <button onclick="changeText()">Ubah Teks</button>
+            <button onclick="calculate()">Hitung 5 + 3</button>
+            <div id="result"></div>
+        </div>
+
+        <div class="note">
+            <strong>Tips:</strong> Gunakan browser console (F12) untuk men-debug dan melihat output console.log() saat belajar JavaScript.
+        </div>
+
+        <h2>Latihan:</h2>
+        <div class="example">
+            <p>Coba buat fungsi JavaScript sederhana:</p>
+            <div class="code">
+// Kalkulator sederhana
+function calculator(operator, a, b) {
+    switch (operator) {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+        default:
+            return "Operator tidak valid";
+    }
+}
+
+// Penggunaan
+console.log(calculator('+', 5, 3));  // 8
+console.log(calculator('*', 4, 7));  // 28
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('result').innerHTML =
+                '<div style="color: green;">✓ Hello World! JavaScript berjalan!</div>';
+        }
+
+        function changeText() {
+            document.getElementById('result').innerHTML =
+                '<div style="color: blue;">📝 Teks berhasil diubah dengan JavaScript!</div>';
+        }
+
+        function calculate() {
+            let result = 5 + 3;
+            document.getElementById('result').innerHTML =
+                '<div style="color: purple;">🔢 Hasil 5 + 3 = ' + result + '</div>';
+        }
+    </script>
+</body>
+</html>
