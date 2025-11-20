@@ -26,6 +26,13 @@ public class Course implements Serializable {
     private String firstLessonAsset;
     private boolean hasOfflineContent;
 
+    // Learning structure
+    private int totalLessons; // total number of lessons in this course
+    private int completedLessons; // completed lessons count
+    private String currentLesson; // current lesson file name
+    private List<String> lessonSequence; // ordered list of lessons
+    private String prerequisiteCourse; // required course before this one
+
     // Gamification
     private int learningStreak; // consecutive days of learning
     private long lastAccessDate; // timestamp of last access
@@ -41,6 +48,9 @@ public class Course implements Serializable {
         this.lastAccessDate = 0;
         this.totalMinutesSpent = 0;
         this.experiencePoints = 0;
+        this.totalLessons = 0;
+        this.completedLessons = 0;
+        this.currentLesson = "";
     }
 
     // Constructor with required fields
@@ -228,6 +238,180 @@ public class Course implements Serializable {
         return null;
     }
 
+    // ==================== LEARNING STRUCTURE METHODS ====================
+
+    public int getTotalLessons() {
+        return totalLessons;
+    }
+
+    public void setTotalLessons(int totalLessons) {
+        this.totalLessons = totalLessons;
+        this.updatedAt = System.currentTimeMillis();
+    }
+
+    public int getCompletedLessons() {
+        return completedLessons;
+    }
+
+    public void setCompletedLessons(int completedLessons) {
+        this.completedLessons = completedLessons;
+        this.updatedAt = System.currentTimeMillis();
+    }
+
+    public String getCurrentLesson() {
+        return currentLesson;
+    }
+
+    public void setCurrentLesson(String currentLesson) {
+        this.currentLesson = currentLesson;
+        this.updatedAt = System.currentTimeMillis();
+    }
+
+    public List<String> getLessonSequence() {
+        return lessonSequence;
+    }
+
+    public void setLessonSequence(List<String> lessonSequence) {
+        this.lessonSequence = lessonSequence;
+        this.totalLessons = lessonSequence != null ? lessonSequence.size() : 0;
+        this.updatedAt = System.currentTimeMillis();
+    }
+
+    public String getPrerequisiteCourse() {
+        return prerequisiteCourse;
+    }
+
+    public void setPrerequisiteCourse(String prerequisiteCourse) {
+        this.prerequisiteCourse = prerequisiteCourse;
+        this.updatedAt = System.currentTimeMillis();
+    }
+
+    /**
+     * Get progress percentage
+     */
+    public float getProgressPercentage() {
+        if (totalLessons == 0) return 0f;
+        return (float) completedLessons / totalLessons * 100f;
+    }
+
+    /**
+     * Check if course is completed
+     */
+    public boolean isCompleted() {
+        return totalLessons > 0 && completedLessons >= totalLessons;
+    }
+
+    /**
+     * Mark current lesson as completed and move to next
+     */
+    public String completeCurrentLessonAndMoveToNext() {
+        if (lessonSequence == null || lessonSequence.isEmpty()) {
+            return null;
+        }
+
+        // Find current lesson index
+        int currentIndex = -1;
+        if (currentLesson != null && !currentLesson.isEmpty()) {
+            for (int i = 0; i < lessonSequence.size(); i++) {
+                if (lessonSequence.get(i).equals(currentLesson)) {
+                    currentIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Mark current lesson as completed if it exists
+        if (currentIndex >= 0 && currentIndex < lessonSequence.size()) {
+            completedLessons = Math.max(completedLessons, currentIndex + 1);
+        }
+
+        // Move to next lesson
+        int nextIndex = currentIndex + 1;
+        if (nextIndex < lessonSequence.size()) {
+            String nextLesson = lessonSequence.get(nextIndex);
+            setCurrentLesson(nextLesson);
+            return nextLesson;
+        }
+
+        return null; // No more lessons
+    }
+
+    /**
+     * Get next lesson
+     */
+    public String getNextLesson() {
+        if (lessonSequence == null || lessonSequence.isEmpty()) {
+            return null;
+        }
+
+        if (currentLesson == null || currentLesson.isEmpty()) {
+            return lessonSequence.get(0); // First lesson
+        }
+
+        int currentIndex = -1;
+        for (int i = 0; i < lessonSequence.size(); i++) {
+            if (lessonSequence.get(i).equals(currentLesson)) {
+                currentIndex = i;
+                break;
+            }
+        }
+
+        if (currentIndex >= 0 && currentIndex < lessonSequence.size() - 1) {
+            return lessonSequence.get(currentIndex + 1);
+        }
+
+        return null; // No next lesson
+    }
+
+    /**
+     * Get previous lesson
+     */
+    public String getPreviousLesson() {
+        if (lessonSequence == null || lessonSequence.isEmpty() ||
+            currentLesson == null || currentLesson.isEmpty()) {
+            return null;
+        }
+
+        int currentIndex = -1;
+        for (int i = 0; i < lessonSequence.size(); i++) {
+            if (lessonSequence.get(i).equals(currentLesson)) {
+                currentIndex = i;
+                break;
+            }
+        }
+
+        if (currentIndex > 0) {
+            return lessonSequence.get(currentIndex - 1);
+        }
+
+        return null; // No previous lesson
+    }
+
+    /**
+     * Get current lesson index
+     */
+    public int getCurrentLessonIndex() {
+        if (lessonSequence == null || lessonSequence.isEmpty() ||
+            currentLesson == null || currentLesson.isEmpty()) {
+            return -1;
+        }
+
+        for (int i = 0; i < lessonSequence.size(); i++) {
+            if (lessonSequence.get(i).equals(currentLesson)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    /**
+     * Get formatted progress text
+     */
+    public String getProgressText() {
+        return completedLessons + " dari " + totalLessons + " pelajaran";
+    }
+
     @Override
     public String toString() {
         return "Course{" +
@@ -237,6 +421,9 @@ public class Course implements Serializable {
                 ", difficulty=" + difficulty +
                 ", estimatedTime=" + estimatedTime +
                 ", hasOfflineContent=" + hasOfflineContent +
+                ", totalLessons=" + totalLessons +
+                ", completedLessons=" + completedLessons +
+                ", progress=" + getProgressPercentage() + "%" +
                 '}';
     }
 }

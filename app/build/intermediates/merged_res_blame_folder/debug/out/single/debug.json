@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_fragment_settings.xml.flat",
-        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_settings.xml"
-    },
-    {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/anim_slide_in_right.xml.flat",
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_fragment_settings.xml.flat",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_settings.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/mipmap-xhdpi_ic_launcher_round.xml.flat",
@@ -20,12 +20,12 @@
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/mipmap-mdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/drawable_ic_check_circle.xml.flat",
-        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/drawable/ic_check_circle.xml"
-    },
-    {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/drawable_ic_check_circle.xml.flat",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/drawable/ic_check_circle.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/menu_bottom_nav_menu.xml.flat",
@@ -36,16 +36,16 @@
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/mipmap-xxxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_fragment_course_detail.xml.flat",
-        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_course_detail.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_item_learning_outcome.xml.flat",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_learning_outcome.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/drawable_bg_snackbar.xml.flat",
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/drawable/bg_snackbar.xml"
     },
     {
-        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_item_learning_outcome.xml.flat",
-        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_learning_outcome.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_fragment_course_detail.xml.flat",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_course_detail.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/xml_backup_rules.xml.flat",
@@ -126,6 +126,10 @@
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/anim_fade_out.xml.flat",
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/anim/fade_out.xml"
+    },
+    {
+        "merged": "com.codelearn.android.app-merged_res-50:/layout_fragment_settings_final.xml.flat",
+        "source": "com.codelearn.android.app-main-52:/layout/fragment_settings_final.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/anim_slide_in_left.xml.flat",
@@ -218,6 +222,10 @@
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/anim_slide_out_right.xml.flat",
         "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/layout_fragment_simple_settings.xml.flat",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_simple_settings.xml"
     },
     {
         "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-merged_res-50:/menu_menu_course_detail.xml.flat",

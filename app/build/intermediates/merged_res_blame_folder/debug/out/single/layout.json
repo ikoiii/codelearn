@@ -1,46 +1,54 @@
 [
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_course_detail.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/fragment_course_detail.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/activity_main.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_settings.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/fragment_settings.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/item_course.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_course.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/item_requirement.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/item_requirement.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_course_list.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_course_list.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/item_course.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/item_course.xml"
+        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_settings_final.xml",
+        "source": "com.codelearn.android.app-main-52:/layout/fragment_settings_final.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/item_learning_outcome.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/item_learning_outcome.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/item_requirement.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_requirement.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_home.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/fragment_home.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_content_viewer.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_content_viewer.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/item_recent_course.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/item_recent_course.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_course_detail.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_course_detail.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/item_achievement.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/item_achievement.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/item_learning_outcome.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_learning_outcome.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_content_viewer.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/fragment_content_viewer.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/item_achievement.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_achievement.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/activity_main.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/activity_main.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_settings.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_settings.xml"
     },
     {
-        "merged": "com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_course_list.xml",
-        "source": "com.codelearn.android.app-main-52:/layout/fragment_course_list.xml"
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_home.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/fragment_simple_settings.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/fragment_simple_settings.xml"
+    },
+    {
+        "merged": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-mergeDebugResources-49:/layout/item_recent_course.xml",
+        "source": "/home/ikoi/.gradle/daemon/7.6.4/com.codelearn.android.app-main-52:/layout/item_recent_course.xml"
     }
 ]

@@ -2813,6 +2813,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_about
+id btn_back
+id btn_help
+id btn_reset_progress
+id btn_text_size
 id buttonBack
 id buttonEnroll
 id buttonFilterAll
@@ -3375,6 +3380,8 @@ layout fragment_content_viewer
 layout fragment_course_list
 layout fragment_home
 layout fragment_settings
+layout fragment_settings_final
+layout fragment_simple_settings
 layout image_frame
 layout item_achievement
 layout item_course

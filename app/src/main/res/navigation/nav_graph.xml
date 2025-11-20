@@ -43,9 +43,9 @@
     <!-- Settings Fragment -->
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.codelearn.android.ui.settings.SettingsFragment"
+        android:name="com.codelearn.android.ui.settings.SimpleSettingsFragment"
         android:label="Pengaturan"
-        tools:layout="@layout/fragment_settings">
+        tools:layout="@layout/fragment_simple_settings">
 
     </fragment>
 
