@@ -6484,7 +6484,6 @@ androidx.navigation.NavController:
     public androidx.navigation.NavBackStackEntry getPreviousBackStackEntry()
     public androidx.lifecycle.ViewModelStoreOwner getViewModelStoreOwner(int)
     public final kotlinx.coroutines.flow.StateFlow getVisibleEntries()
-    public void navigate(int)
     public void navigate(android.net.Uri)
     public void navigate(android.net.Uri,androidx.navigation.NavOptions)
     public void navigate(android.net.Uri,androidx.navigation.NavOptions,androidx.navigation.Navigator$Extras)
@@ -9116,14 +9115,13 @@ com.codelearn.android.databinding.ActivityMainBinding:
     public androidx.coordinatorlayout.widget.CoordinatorLayout getRoot()
 com.codelearn.android.databinding.FragmentContentViewerBinding:
     public synthetic bridge android.view.View getRoot()
-com.codelearn.android.databinding.FragmentCourseDetailBinding:
-    public synthetic bridge android.view.View getRoot()
-    public androidx.coordinatorlayout.widget.CoordinatorLayout getRoot()
 com.codelearn.android.databinding.FragmentCourseListBinding:
     public synthetic bridge android.view.View getRoot()
 com.codelearn.android.databinding.FragmentHomeBinding:
     public synthetic bridge android.view.View getRoot()
     public androidx.core.widget.NestedScrollView getRoot()
+com.codelearn.android.databinding.FragmentSettingsBinding:
+    public synthetic bridge android.view.View getRoot()
 com.codelearn.android.databinding.ItemAchievementBinding:
     public synthetic bridge android.view.View getRoot()
     public androidx.cardview.widget.CardView getRoot()
@@ -9145,37 +9143,6 @@ com.codelearn.android.ui.courses.CourseAdapter$OnItemLongClickListener
 com.codelearn.android.ui.courses.CourseAdapter:
     private com.codelearn.android.ui.courses.CourseAdapter$OnItemLongClickListener onItemLongClickListener
     public void setOnItemLongClickListener(com.codelearn.android.ui.courses.CourseAdapter$OnItemLongClickListener)
-com.codelearn.android.ui.courses.CourseDetailFragment$1
-com.codelearn.android.ui.courses.CourseDetailFragment
-com.codelearn.android.ui.courses.CourseDetailViewModel:
-    private int studentCount
-    private com.codelearn.android.model.Course createMockCourse(int)
-    private java.util.List createMockLearningOutcomes(int)
-    private java.util.List createMockRequirements(int)
-    public androidx.lifecycle.LiveData getCourse()
-    public androidx.lifecycle.LiveData getErrorMessage()
-    public java.lang.String getFormattedOriginalPrice()
-    public java.lang.String getFormattedPrice()
-    public java.lang.String getFormattedStudentCount()
-    public java.lang.String getInstructorImage()
-    public java.lang.String getInstructorName()
-    public java.lang.String getInstructorTitle()
-    public androidx.lifecycle.LiveData getIsEnrolled()
-    public androidx.lifecycle.LiveData getIsInWishlist()
-    public androidx.lifecycle.LiveData getIsLoading()
-    public androidx.lifecycle.LiveData getLearningOutcomes()
-    public androidx.lifecycle.LiveData getRequirements()
-    private boolean isCourseEnrolled(int)
-    private boolean isCourseWishlisted(int)
-    public boolean isFreeCourse()
-    private synthetic void lambda$loadCourseDetails$0(int)
-    private synthetic void lambda$toggleEnrollment$1(boolean)
-    private synthetic void lambda$toggleWishlist$2(boolean)
-    public void loadCourseDetails(int)
-    private void setLoading(boolean)
-    private void setMockMetadata(int)
-    public void toggleEnrollment()
-    public void toggleWishlist()
 com.codelearn.android.ui.courses.CourseListViewModel:
     public void clearSearch()
     public androidx.lifecycle.LiveData getCurrentFilter()
@@ -20916,6 +20883,7 @@ androidx.navigation.NavHostController:
     public static void navigate$androidx$navigation$NavController$1()
     public static void navigate$androidx$navigation$NavController$2()
     public static void navigate$androidx$navigation$NavController$3()
+    public static void navigate$androidx$navigation$NavController$4()
     public final void navigateInternal(androidx.navigation.Navigator,java.util.List,androidx.navigation.NavOptions,kotlin.jvm.functions.Function1)
     public static void navigateInternal$androidx$navigation$NavController()
     public static boolean navigateUp$androidx$navigation$NavController()
@@ -22798,9 +22766,9 @@ com.codelearn.android.CodeLearnApplication:
     public static void initializeComponents()
 com.codelearn.android.MainActivity:
     public final void initializeViews()
+    public static void navigateToSettings()
     public final boolean onSupportNavigateUp()
     public final void setupNavigation()
-    public final void updateToolbarTitle(int)
 com.codelearn.android.databinding.ActivityMainBinding:
     public final com.google.android.material.appbar.AppBarLayout appBarLayout
     public final androidx.fragment.app.FragmentContainerView navHostFragment
@@ -22812,31 +22780,6 @@ com.codelearn.android.databinding.FragmentContentViewerBinding:
     public final android.widget.LinearLayout navigationControls
     public final androidx.appcompat.widget.Toolbar toolbar
     public static androidx.coordinatorlayout.widget.CoordinatorLayout getRoot()
-com.codelearn.android.databinding.FragmentCourseDetailBinding:
-    public final com.google.android.material.appbar.AppBarLayout appBarLayout
-    public final com.google.android.material.button.MaterialButton buttonEnroll
-    public final com.google.android.material.button.MaterialButton buttonWishlist
-    public final com.google.android.material.card.MaterialCardView cardDescription
-    public final com.google.android.material.card.MaterialCardView cardInstructor
-    public final com.google.android.material.card.MaterialCardView cardLearningOutcomes
-    public final com.google.android.material.card.MaterialCardView cardRequirements
-    public final com.google.android.material.chip.Chip chipCategory
-    public final com.google.android.material.chip.Chip chipDifficulty
-    public final com.google.android.material.appbar.CollapsingToolbarLayout collapsingToolbar
-    public final android.widget.ImageView imageHero
-    public final android.widget.ImageView imageInstructor
-    public final androidx.recyclerview.widget.RecyclerView recyclerViewLearningOutcomes
-    public final androidx.recyclerview.widget.RecyclerView recyclerViewRequirements
-    public final androidx.coordinatorlayout.widget.CoordinatorLayout rootView
-    public final com.google.android.material.tabs.TabLayout tabLayout
-    public final android.widget.TextView textCourseDescription
-    public final android.widget.TextView textEstimatedTime
-    public final android.widget.TextView textInstructorName
-    public final android.widget.TextView textInstructorTitle
-    public final android.widget.TextView textOriginalPrice
-    public final android.widget.TextView textPrice
-    public final android.widget.TextView textStudentCount
-    public final com.google.android.material.appbar.MaterialToolbar toolbar
 com.codelearn.android.databinding.FragmentCourseListBinding:
     public static androidx.core.widget.NestedScrollView getRoot()
 com.codelearn.android.databinding.FragmentHomeBinding:
@@ -22844,6 +22787,8 @@ com.codelearn.android.databinding.FragmentHomeBinding:
     public final androidx.cardview.widget.CardView cardHtml
     public final androidx.cardview.widget.CardView cardJavaScript
     public final androidx.core.widget.NestedScrollView rootView
+com.codelearn.android.databinding.FragmentSettingsBinding:
+    public static androidx.core.widget.NestedScrollView getRoot()
 com.codelearn.android.databinding.ItemAchievementBinding:
     public final android.widget.ImageView imageAchievement
     public final androidx.cardview.widget.CardView rootView
@@ -22891,20 +22836,6 @@ com.codelearn.android.ui.courses.CourseAdapter:
     public static void setOnItemClickListener()
     public static void submitList()
     public static void submitList$androidx$recyclerview$widget$ListAdapter()
-com.codelearn.android.ui.courses.CourseDetailViewModel:
-    public final androidx.lifecycle.MutableLiveData course
-    public final androidx.lifecycle.MutableLiveData errorMessage
-    public final java.lang.String instructorImage
-    public final java.lang.String instructorName
-    public final java.lang.String instructorTitle
-    public final androidx.lifecycle.MutableLiveData isEnrolled
-    public final boolean isFree
-    public final androidx.lifecycle.MutableLiveData isInWishlist
-    public final androidx.lifecycle.MutableLiveData isLoading
-    public final androidx.lifecycle.MutableLiveData learningOutcomes
-    public final double originalPrice
-    public final double price
-    public final androidx.lifecycle.MutableLiveData requirements
 com.codelearn.android.ui.courses.CourseListFragment$$InternalSyntheticLambda$2$1b4ccfac1c6be14b6614302f9dd05af8ffda1a5bb0e3b10137f8c8adc3ddbbe6$0:
     public final boolean onCommitContent(androidx.appcompat.app.LayoutIncludeDetector,int,android.os.Bundle)
 com.codelearn.android.ui.courses.CourseListFragment$$InternalSyntheticLambda$2$1b4ccfac1c6be14b6614302f9dd05af8ffda1a5bb0e3b10137f8c8adc3ddbbe6$1
@@ -22918,7 +22849,7 @@ com.codelearn.android.ui.courses.CourseListFragment:
     public final void hideLoading()
     public static void initializeViewModel()
     public final void initializeViews()
-    public static void navigateToCourseDetail()
+    public static void navigateToContentViewer()
     public static void observeViewModel()
     public static void setupFilterButtons()
     public static void showCourses()
@@ -22945,6 +22876,23 @@ com.codelearn.android.ui.home.HomeViewModel:
     public final androidx.lifecycle.MutableLiveData loadingState
     public final androidx.lifecycle.MutableLiveData recentCourses
     public final androidx.lifecycle.MutableLiveData userData
+com.codelearn.android.ui.settings.SettingsFragment$$InternalSyntheticLambda$2$c7af548fa9a1be7b6a863130c3bf37bd3e3ca251247417eda13ecaaa447a858b$1
+com.codelearn.android.ui.settings.SettingsFragment$$InternalSyntheticLambda$2$c7af548fa9a1be7b6a863130c3bf37bd3e3ca251247417eda13ecaaa447a858b$2
+com.codelearn.android.ui.settings.SettingsFragment$$InternalSyntheticLambda$2$c7af548fa9a1be7b6a863130c3bf37bd3e3ca251247417eda13ecaaa447a858b$3
+com.codelearn.android.ui.settings.SettingsFragment$$InternalSyntheticLambda$2$c7af548fa9a1be7b6a863130c3bf37bd3e3ca251247417eda13ecaaa447a858b$4
+com.codelearn.android.ui.settings.SettingsFragment:
+    public final void initializeViews()
+    public static void loadSettings()
+    public static void setupAboutSection()
+    public static void setupAppSection()
+    public static void setupClickListeners()
+    public static void setupLearningSection()
+    public static void showAboutDialog()
+    public static void showHelpDialog()
+    public static void showResetProgressDialog()
+    public static void showTextSizeDialog()
+    public final void updateProgressDisplay()
+    public static void updateTextSizeDisplay()
 com.google.android.material.color.ColorResourcesLoaderCreator$$InternalSyntheticApiModelOutline$1$a78d977dd4369caaf6e767e94719f1a0ba09cff7402ec4864586432dba0292bf$0
 com.google.android.material.color.ColorResourcesLoaderCreator$$InternalSyntheticApiModelOutline$1$a78d977dd4369caaf6e767e94719f1a0ba09cff7402ec4864586432dba0292bf$1
 com.google.android.material.color.ColorResourcesLoaderCreator$$InternalSyntheticApiModelOutline$1$a78d977dd4369caaf6e767e94719f1a0ba09cff7402ec4864586432dba0292bf$2

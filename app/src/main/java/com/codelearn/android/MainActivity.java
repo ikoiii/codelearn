@@ -1,6 +1,8 @@
 package com.codelearn.android;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -54,9 +56,10 @@ public class MainActivity extends AppCompatActivity {
     private void setupNavigation() {
         if (navController == null) return;
 
-        // Define top-level destinations - hanya course list
+        // Define top-level destinations - course list and settings
         appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.courseListFragment
+                R.id.courseListFragment,
+                R.id.settingsFragment
         ).build();
 
         // Setup action bar with back button support
@@ -82,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.contentViewerFragment:
                 title = "Belajar";
+                break;
+            case R.id.settingsFragment:
+                title = "Pengaturan";
                 break;
         }
 
@@ -121,5 +127,29 @@ public class MainActivity extends AppCompatActivity {
 
         // Exit app
         super.onBackPressed();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.action_settings) {
+            navigateToSettings();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Navigate to Settings Fragment
+     */
+    private void navigateToSettings() {
+        if (navController != null) {
+            navController.navigate(R.id.settingsFragment);
+        }
     }
 }

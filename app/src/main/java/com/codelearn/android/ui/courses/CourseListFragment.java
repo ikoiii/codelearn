@@ -60,7 +60,7 @@ public class CourseListFragment extends Fragment {
 
         // Setup course click listener
         courseAdapter.setOnItemClickListener((course, position) -> {
-            navigateToCourseDetail(course);
+            navigateToContentViewer(course);
         });
     }
 
@@ -174,7 +174,7 @@ public class CourseListFragment extends Fragment {
         }
     }
 
-    private void navigateToCourseDetail(Course course) {
+    private void navigateToContentViewer(Course course) {
         NavController navController = Navigation.findNavController(requireView());
 
         // Navigate ke ContentViewer langsung untuk kursus offline

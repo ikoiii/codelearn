@@ -26,11 +26,21 @@ public class Course implements Serializable {
     private String firstLessonAsset;
     private boolean hasOfflineContent;
 
+    // Gamification
+    private int learningStreak; // consecutive days of learning
+    private long lastAccessDate; // timestamp of last access
+    private int totalMinutesSpent; // total minutes spent on this course
+    private int experiencePoints; // XP earned from this course
+
     // Default constructor
     public Course() {
         this.isActive = true;
         this.createdAt = System.currentTimeMillis();
         this.updatedAt = System.currentTimeMillis();
+        this.learningStreak = 0;
+        this.lastAccessDate = 0;
+        this.totalMinutesSpent = 0;
+        this.experiencePoints = 0;
     }
 
     // Constructor with required fields

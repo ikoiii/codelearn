@@ -16,8 +16,7 @@ public class Constants {
     public static final String PREF_USER_NAME = "user_name";
     public static final String PREF_USER_EMAIL = "user_email";
     public static final String PREF_IS_LOGGED_IN = "is_logged_in";
-    public static final String PREF_DARK_MODE = "dark_mode";
-
+    
     // Database
     public static final String DATABASE_NAME = "codelearn_database";
     public static final int DATABASE_VERSION = 1;
